@@ -1,6 +1,6 @@
 {
-  "name": "shades",
-  "version": "1.0.0",
+  "name": "shades-js",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
