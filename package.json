@@ -1,6 +1,6 @@
 {
-  "name": "shades-js",
-  "version": "0.0.1",
+  "name": "js-shade",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisGitmed/shades.git"
+    "url": "git+https://github.com/ChrisGitmed/js-shade.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChrisGitmed/shades/issues"
+    "url": "https://github.com/ChrisGitmed/js-shade/issues"
   },
-  "homepage": "https://github.com/ChrisGitmed/shades#readme",
+  "homepage": "https://github.com/ChrisGitmed/js-shade#readme",
   "type": "module"
 }
