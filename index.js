@@ -21,12 +21,13 @@ export class Shade {
   }
 
   static processString = (string, color) => {
+    const temp = this.string || '';
     if (string) {
-      const final = ansiCodes[color] + (this.string || '') + string + ansiCodes.reset;
+      const final = ansiCodes[color] + temp + string + ansiCodes.reset;
       this.string = '';
       return final;
     }
-    this.string = ansiCodes[color] + this.string;
+    this.string = ansiCodes[color] + temp;
     return this;
   }
 
