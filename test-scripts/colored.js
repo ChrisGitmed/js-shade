@@ -1,4 +1,4 @@
-import { Shade } from '../shade.js';
+import { Shade } from '../index.js';
 
 /**
  * Produces strings, but in color!
