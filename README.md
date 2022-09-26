@@ -4,15 +4,18 @@ An extremely lightweight Node.js library created to simplify formatting terminal
 
 Makes adding color or style to console output much easier, with less room for error.
 
-----
+---
 
 ## Install
 ```
 yarn add js-shade
 ```
-
+---
 ## Usage
+Currently only supports ES6 imports. CommonJS `require` not yet supported.
 ```
+  import { Shade } from 'js-shade';
+
   console.log(Shade.red('Red text!'));
   console.log(Shade.yellow('Yellow text!'));
   console.log(Shade.black('Black text!'));
@@ -26,12 +29,13 @@ yarn add js-shade
   console.log(Shade.dim('Dim text!'));
   console.log(Shade.reverse('Reversed text!'));
 ```
-
+---
 ### Method Chaining
+js-shade supports method chaining. So you can combine multiple formats in one statement.
 ```
-  console.log(Shade.red().underline('Underlined red text!'));
-  console.log(Shade.underline().red('Underlined red again text!'));
+  console.log(Shade.red().underline('Red underlined text!'));
+  console.log(Shade.underline().red('Also red underlined text!'));
   console.log(Shade.bright().yellow('Bright yellow text!'));
   console.log(Shade.dim().green('Dim green text!'));
-  console.log(Shade.dim().underline().red('Dim underlined red text!'));
+  console.log(Shade.bright().underline().red('Bright red underlined text!'));
 ```
