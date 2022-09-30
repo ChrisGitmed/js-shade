@@ -1,17 +1,13 @@
 # js-shade
-
-An extremely lightweight Node.js library created to simplify formatting terminal text with ANSI codes.
-
-Makes adding color or style to console output much easier, with less room for error.
+A lightweight Node.js library created to simplify formatting terminal text with ANSI codes.
+Easily add color or style to terminal output, with less room for error.
 
 ---
-
-## Install
+### Install
 ```
 yarn add js-shade
 ```
----
-## Usage
+### Usage
 Currently only supports ES6 imports. CommonJS `require` not yet supported.
 ```
   import { Shade } from 'js-shade';
@@ -29,8 +25,7 @@ Currently only supports ES6 imports. CommonJS `require` not yet supported.
   console.log(Shade.dim('Dim text!'));
   console.log(Shade.reverse('Reversed text!'));
 ```
----
-### Method Chaining
+#### Method Chaining
 js-shade supports method chaining. So you can combine multiple formats in one statement.
 ```
   console.log(Shade.red().underline('Red underlined text!'));
