@@ -7,9 +7,10 @@ Easily add color or style to terminal output, with less room for error.
 ```
 yarn add js-shade
 ```
+---
+
 ### Usage
-Currently only supports ES6 imports. CommonJS `require` not yet supported.
-```
+```javascript
   import { Shade } from 'js-shade';
 
   console.log(Shade.red('Red text!'));
@@ -25,9 +26,10 @@ Currently only supports ES6 imports. CommonJS `require` not yet supported.
   console.log(Shade.dim('Dim text!'));
   console.log(Shade.reverse('Reversed text!'));
 ```
+
 #### Method Chaining
 js-shade supports method chaining. So you can combine multiple formats in one statement.
-```
+```javascript
   console.log(Shade.red().underline('Red underlined text!'));
   console.log(Shade.underline().red('Also red underlined text!'));
   console.log(Shade.bright().yellow('Bright yellow text!'));
